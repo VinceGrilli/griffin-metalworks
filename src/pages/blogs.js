@@ -1,9 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link , graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql } from "gatsby";
+
 
 class BlogsPost extends React.Component {
   constructor(props) {
@@ -23,10 +23,10 @@ class BlogsPost extends React.Component {
   }
 
   handleScroll = () => {
-    var lastScrollY = window.pageYOffset + 1100;
+    const lastScrollY = window.pageYOffset + 1100;
 
     if (lastScrollY > window.outerHeight) {
-      var count = this.state.NoOfPost + 3;
+      const count = this.state.NoOfPost + 3;
       this.setState({
         NoOfPost: count
       });
@@ -39,7 +39,7 @@ class BlogsPost extends React.Component {
     const { NoOfPost } = this.state;
 
     return (
-      <React.Fragment>
+      <>
         <ul className="blog-list" onScroll={this.onScrollEvent}>
           {data.data.allContentfulBlogs.edges.slice(0, NoOfPost).map(items => (
             <li>
@@ -47,7 +47,7 @@ class BlogsPost extends React.Component {
                 <div className="post-thumbnail">
                   <Img sizes={items.node.featureImage.fluid} />
                   <div className="post-date">
-                    <i className="fas fa-calendar-alt"></i>
+                    <i className="fas fa-calendar-alt" />
                     {items.node.publicData}
                   </div>
                 </div>
@@ -64,7 +64,7 @@ class BlogsPost extends React.Component {
             </li>
           ))}
         </ul>
-      </React.Fragment>
+      </>
     );
   }
 }
@@ -74,7 +74,7 @@ const Blogs = data => (
   <Layout>
     <SEO title="Blogs" keywords={[`gatsby`, `blogs`, `react`]} />
     <div className="container blog-page">
-      <BlogsPost data={data}></BlogsPost>
+      <BlogsPost data={data} />
     </div>
   </Layout>
 )
