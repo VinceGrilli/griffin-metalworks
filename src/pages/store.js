@@ -87,6 +87,7 @@ export const query = graphql`
         node{
           id
           name
+          category
           slug
           image {
             fixed(width: 1000, height: 500) {
