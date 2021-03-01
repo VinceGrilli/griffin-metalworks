@@ -551,17 +551,6 @@
           "disabled": false,
           "omitted": false
         },
-        {
-          "id": "rating",
-          "name": "Rating",
-          "type": "Integer",
-          "localized": false,
-          "required": false,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false
-        }
       ]
     }
   ],
@@ -919,11 +908,6 @@
           "widgetId": "numberEditor",
           "widgetNamespace": "builtin"
         },
-        {
-          "fieldId": "rating",
-          "widgetId": "numberEditor",
-          "widgetNamespace": "builtin"
-        }
       ]
     }
   ],

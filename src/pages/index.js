@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 import Banner from "../components/banner"
 import LatestBlogs from "../components/latestBlog"
 import Countdown from "../components/countdown"
-import StarRatingComponent from 'react-star-rating-component';
 import { graphql } from "gatsby";
 
 class IndexPost extends React.Component {
@@ -25,11 +24,6 @@ class IndexPost extends React.Component {
                   <h2>
                     <Link to={`/${items.node.slug}`}>{items.node.name}</Link>
                   </h2>
-                  <StarRatingComponent
-                    name="rate1"
-                    starCount={5}
-                    value={items.node.rating}
-                  />
                   <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                   <div className="row">
                     <div className="col-sm-4 align-self-center">
@@ -82,7 +76,6 @@ export const query = graphql`
           id
           name
           slug
-          rating
           image {
             fluid(maxWidth: 1000) {
               base64

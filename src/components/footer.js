@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "gatsby"
-
+import logo from '../images/btc-logo.png';
 class Footer extends Component {
     render() {
         return (
@@ -22,7 +22,18 @@ class Footer extends Component {
                         </div>
                         <div className="footer-bottom social-right-menu ">
                             <div className="site-info">
-                                ©2019 Oneshopper. All rights reserved.
+                            © Copyright {new Date().getFullYear()} All rights reserved. Website crafted by
+                            {` `}
+                            <a href="https://builttocode.dev">
+                                <img
+                                style={{
+                                    maxWidth: `7rem`,
+                                    marginTop: `1.5rem`
+                                }}
+                                src={logo}
+                                alt="Built to Code"
+                                />
+                            </a>
                             </div>
                         </div>
                     </div>
