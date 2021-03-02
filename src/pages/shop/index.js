@@ -1,8 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useState, useEffect} from "react"
 import { Link , graphql } from "gatsby"
 import Img from "gatsby-image"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
 
 const IndexPost = ({ data }) => {
@@ -22,7 +23,7 @@ const IndexPost = ({ data }) => {
       window.removeEventListener('scroll', handleScroll)
     }
   })
-
+    console.log(data)
     return (
       <>
         <div className="row product-main" onScroll={handleScroll}>
