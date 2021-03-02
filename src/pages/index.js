@@ -47,10 +47,10 @@ const IndexPost = ({ data }) => (
             </div>
           </div>
         </div>
-          ))}
+      ))}
     </div>
   </>
-    );
+);
   
 
 

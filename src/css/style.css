@@ -267,8 +267,7 @@ ul.latest-blog li .inner a{position:absolute;left:0;right:0;top:0;bottom:0;z-ind
 .blogs-page .post-thumbnail .gatsby-image-wrapper{height:550px;}
 .blogs-page .post-details .post-date{margin-bottom:20px;font-size:14px;}
 .blogs-page .post-details .post-date i{margin-right:5px;}
-.blogs-page .post-details .author{margin-bottom:30px;}
-div#disqus_thread{padding:30px;background:#fff;box-shadow:0 2px 7px 0 rgba(0,0,0,.05);margin-bottom:30px;}
+.blogs-page .post-details .author{margin-bottom:30px;} 
 .countdown-section .countdown-inner .date{display:block;margin-bottom:40px;}
 .countdown-section .countdown-inner .date strong{box-shadow:0 5px 10px -3px rgba(0,0,0,0.25);-webkit-transition:-webkit-box-shadow 0.2s;-webkit-transition:box-shadow 0.2s;transition:box-shadow 0.2s;background:#fff;padding:20px 20px;box-sizing:border-box;text-shadow:none;color:#333;border-top:4px solid #ef3d56;}
 .countdown-section .countdown-inner .date strong i{text-shadow:none;color:#333;margin-right:10px;}
@@ -300,7 +299,7 @@ footer.site-footer ul{margin:0;}
   ul.blog-list li .post-item{display:block;}
   ul.blog-list li{margin-bottom:40px;}
   .blogs-page .post-details{background:none;padding:0;}
-  div#disqus_thread{background:none;box-shadow:none;padding:0;}
+  div#s_thread{background:none;box-shadow:none;padding:0;}
 }
 @media (max-width:767px){
   header.site-header .align-self-center{align-self:center!important;text-align:left;}
