@@ -23,7 +23,6 @@ const IndexPost = ({ data }) => {
       window.removeEventListener('scroll', handleScroll)
     }
   })
-    console.log(data)
     return (
       <>
         <div className="row product-main" onScroll={handleScroll}>

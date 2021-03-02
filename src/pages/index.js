@@ -60,7 +60,7 @@ const IndexPage = data => (
     <Banner BannerData={data.data.allContentfulHeaderBanner.edges} />
     <LatestBlogs data={data.data.allContentfulBlogs} />
     <div className="container">
-      <div className="text-center"><h2 className="with-underline">Latest Items</h2></div>
+      <div className="text-center"><h2 className="with-underline"><Link style={{ textDecoration: 'none', color: 'black' }} to="/shop">Latest Items</Link></h2></div>
       <IndexPost data={data} />
     </div>
     <Countdown data={data.data.contentfulDealCountDown} />

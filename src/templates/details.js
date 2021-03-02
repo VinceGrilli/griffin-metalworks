@@ -39,7 +39,7 @@ const ProductDetails = data => (
           </div>
           <div className="col-sm-10 text-left">
             <a
-              href="/"
+              href="#"
               className="Product snipcart-add-item"
               data-item-id={data.data.contentfulProduct.slug}
               data-item-price={data.data.contentfulProduct.price}

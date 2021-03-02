@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const LatestBlogs =({ data })=> (
   <div className="container">
-    <div className="text-center"><h2 className="with-underline">Latest News & Events</h2></div>
+    <div className="text-center"><h2 className="with-underline"><Link style={{ textDecoration: 'none', color: 'black' }} to="/news">Latest News & Events</Link></h2></div>
     <ul className="latest-blog">
       {data.edges.map(items => (
         <li key={items.node.id}>
