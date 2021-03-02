@@ -58,11 +58,17 @@ const IndexPage = data => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `oneshopper`, `react`, `Ecommerce`]} />
     <Banner BannerData={data.data.allContentfulHeaderBanner.edges} />
-    <LatestBlogs data={data.data.allContentfulBlogs} />
     <div className="container">
-      <div className="text-center"><h2 className="with-underline"><Link style={{ textDecoration: 'none', color: 'black' }} to="/shop/latest">Latest Items</Link></h2></div>
+      <div className="text-center">
+        <h2 className="with-underline">
+          <Link style={{ textDecoration: 'none', color: 'black' }} to="/shop/latest">
+            Latest Items
+          </Link>
+        </h2>
+      </div>
       <IndexPost data={data} />
     </div>
+    <LatestBlogs data={data.data.allContentfulBlogs} />
     <Countdown data={data.data.contentfulDealCountDown} />
   </Layout>
 )

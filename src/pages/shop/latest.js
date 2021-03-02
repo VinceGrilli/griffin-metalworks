@@ -7,7 +7,7 @@ import SEO from "../../components/seo"
 
 
 const IndexPost = ({ data }) => {
-  const [useNoOfPosts, setNoOfPosts] = useState(6)
+  const [useNoOfPosts, setNoOfPosts] = useState(9)
   
   const handleScroll = () => {
     const lastScrollY = window.pageYOffset + 1100;
