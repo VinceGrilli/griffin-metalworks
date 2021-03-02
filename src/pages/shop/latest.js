@@ -87,6 +87,8 @@ const IndexPage = data => (
   <Layout>
     <SEO title="Store" keywords={[`gatsby`, `store`, `react`]} />
     <div className="container store-page">
+      <div className="text-center mt-5"><h2 className="with-underline">Latest Items</h2></div>
+
       <IndexPost data={data} />
     </div>
   </Layout>
@@ -95,13 +97,14 @@ const IndexPage = data => (
 export default IndexPage
 
 export const query = graphql`
-  query StoreQuery {
+  query LatestQuery {
     allContentfulProduct{
       edges{
         node{
           id
           name
           category
+          createdAt(difference: "hours")
           slug
           image {
             fixed(width: 1000, height: 500) {
