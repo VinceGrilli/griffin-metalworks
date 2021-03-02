@@ -26,35 +26,37 @@ const IndexPost = ({ data }) => {
     return (
       <>
         <div className="row product-main" onScroll={handleScroll}>
-          {data.data.allContentfulProduct.edges.slice(0, useNoOfPosts).map(items => (
-            <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id}>
-              <div className="details_List">
-                {items.node.image === null ? <div className="no-image">No Image</div> : <Img sizes={items.node.image.fixed} />}
+          {data.data.allContentfulProduct.edges
+            .slice(0, useNoOfPosts)
+            .map(items => (
+              <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id}>
+                <div className="details_List">
+                  {items.node.image === null ? <div className="no-image">No Image</div> : <Img sizes={items.node.image.fixed} />}
 
-                <div className="details_inner">
-                  <h2>
-                    <Link to={`/${items.node.slug}`}>{items.node.name}</Link>
-                  </h2>
-                  <p>{items.node.details.childMarkdownRemark.excerpt}</p>
-                  <div className="row">
-                    <div className="col-sm-4 align-self-center">
-                      {items.node.price === null ? <h6 className='my-auto'>Contact us for an estimate</h6> : (
-                        <span className="price">
-                          $
-                          {items.node.price}
-                        </span>
+                  <div className="details_inner">
+                    <h2>
+                      <Link to={`/${items.node.slug}`}>{items.node.name}</Link>
+                    </h2>
+                    <p>{items.node.details.childMarkdownRemark.excerpt}</p>
+                    <div className="row">
+                      <div className="col-sm-4 align-self-center pr-0">
+                        {items.node.price === null ? <h6 className='my-auto'>Contact us for an estimate</h6> : (
+                          <span className="price">
+                            $
+                            {items.node.price}
+                          </span>
                       )}
-                    </div>
-                    {items.node.price === null ? (
-                      <div className="col-sm-8 text-right align-self-center">
-                        <Link
-                          to="/contact"
-                          className="Product snipcart-add-item"
-                        >
-                          <i className="fas fa-envelope" />
-                          Contact
-                        </Link>
                       </div>
+                      {items.node.price === null ? (
+                        <div className="col-sm-8 text-right align-self-center">
+                          <Link
+                            to="/contact"
+                            className="Product snipcart-add-item"
+                          >
+                            <i className="fas fa-envelope" />
+                            Contact
+                          </Link>
+                        </div>
                     ) : (
                       <div className="col-sm-8 text-right align-self-center">
                         <a
@@ -71,10 +73,10 @@ const IndexPost = ({ data }) => {
                         </a>
                       </div>
                     )}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
           ))}
         </div>
       </>
@@ -88,8 +90,9 @@ const IndexPage = data => (
     <SEO title="Store" keywords={[`gatsby`, `store`, `react`]} />
     <div className="container store-page">
       <div className="text-center mt-5"><h2 className="with-underline">Latest Items</h2></div>
-
       <IndexPost data={data} />
+      <div className="text-center"><h2 className="with-underline"><Link style={{ textDecoration: 'none', color: 'black' }} to="/shop">See All Pieces</Link></h2></div>
+
     </div>
   </Layout>
 )
@@ -98,13 +101,12 @@ export default IndexPage
 
 export const query = graphql`
   query LatestQuery {
-    allContentfulProduct{
+    allContentfulProduct(limit: 9,sort:{fields:createdAt,order: DESC}){
       edges{
         node{
           id
           name
           category
-          createdAt(difference: "hours")
           slug
           image {
             fixed(width: 1000, height: 500) {

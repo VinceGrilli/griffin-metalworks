@@ -37,9 +37,9 @@ const IndexPost = ({ data }) => {
                   </h2>
                   <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                   <div className="row">
-                    <div className="col-sm-4 align-self-center">
+                    <div className="col-sm-4 align-self-center pr-0">
                       {items.node.price === null ? <h6 className='my-auto'>Contact us for an estimate</h6> : (
-                        <span className="price">
+                        <span className="price ">
                           $
                           {items.node.price}
                         </span>

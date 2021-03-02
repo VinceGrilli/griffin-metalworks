@@ -23,7 +23,7 @@ const IndexPost = ({ data }) => (
               </h2>
               <p>{items.node.details.childMarkdownRemark.excerpt}</p>
               <div className="row">
-                <div className="col-sm-4 align-self-center">
+                <div className="col-sm-4 align-self-center pr-0">
                   <span className="price">
                     $
                     {items.node.price}
@@ -60,7 +60,7 @@ const IndexPage = data => (
     <Banner BannerData={data.data.allContentfulHeaderBanner.edges} />
     <LatestBlogs data={data.data.allContentfulBlogs} />
     <div className="container">
-      <div className="text-center"><h2 className="with-underline"><Link style={{ textDecoration: 'none', color: 'black' }} to="/shop">Latest Items</Link></h2></div>
+      <div className="text-center"><h2 className="with-underline"><Link style={{ textDecoration: 'none', color: 'black' }} to="/shop/latest">Latest Items</Link></h2></div>
       <IndexPost data={data} />
     </div>
     <Countdown data={data.data.contentfulDealCountDown} />
