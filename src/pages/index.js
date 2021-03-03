@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
 import { Link , graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -24,25 +26,39 @@ const IndexPost = ({ data }) => (
               <p>{items.node.details.childMarkdownRemark.excerpt}</p>
               <div className="row">
                 <div className="col-sm-4 align-self-center pr-0">
-                  <span className="price">
-                    $
-                    {items.node.price}
-                  </span>
+                  {items.node.price === null ? <h6 className='my-auto'>Contact us for an estimate</h6> : (
+                    <span className="price ">
+                      $
+                      {items.node.price}
+                    </span>
+                      )}
                 </div>
-                <div className="col-sm-8 text-right align-self-center">
-                  <a
-                    href="#"
-                    className="Product snipcart-add-item"
-                    data-item-id={items.node.slug}
-                    data-item-price={items.node.price}
-                    data-item-image={items.node.image === null ? "" : items.node.image.fluid.src}
-                    data-item-name={items.node.name}
-                    data-item-url="/"
-                  >
-                    <i className="fas fa-shopping-bag" />
-                    Add to Cart
-                  </a>
-                </div>
+                {items.node.price === null ? (
+                  <div className="col-sm-8 text-right align-self-center">
+                    <Link
+                      to="/contact"
+                      className="Product snipcart-add-item"
+                    >
+                      <i className="fas fa-envelope" />
+                      Contact
+                    </Link>
+                  </div>
+                    ) : (
+                      <div className="col-sm-8 text-right align-self-center">
+                        <a
+                          href="#"
+                          className="Product snipcart-add-item"
+                          data-item-id={items.node.slug}
+                          data-item-price={items.node.price}
+                          data-item-image={items.node.image === null ? "" : items.node.image.fluid.src}
+                          data-item-name={items.node.name}
+                          data-item-url="/"
+                        >
+                          <i className="fas fa-shopping-bag" />
+                          Add to Cart
+                        </a>
+                      </div>
+                    )}
               </div>
             </div>
           </div>

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
@@ -33,7 +34,7 @@ const Header = ({ siteTitle }) => (
                 <Link className="nav-link" to="/about">About</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact-us">Contact</Link>
+                <Link className="nav-link" to="/contact">Contact</Link>
               </li>
             </ul>
             <div className="header-cart">

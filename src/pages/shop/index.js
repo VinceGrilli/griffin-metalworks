@@ -20,8 +20,8 @@ const IndexPost = ({ data }) => {
         </div>
         <div className="row product-main">
           {data.data.allContentfulProduct.edges
-          .slice()
           .filter(item => item.node.category === 'Knives')
+          .slice(0, 3)
           .map(items => (
             <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id}>
               <div className="details_List">
@@ -92,8 +92,8 @@ const IndexPost = ({ data }) => {
         </div>
         <div className="row product-main">
           {data.data.allContentfulProduct.edges
-          .slice()
           .filter(item => item.node.category === 'Axes')
+          .slice(0, 6)
           .map(items => (
             <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id}>
               <div className="details_List">
@@ -147,8 +147,8 @@ const IndexPost = ({ data }) => {
         </div>
         <div className="text-center">
           <h4 className="with-underline">
-            <Link style={{ textDecoration: 'none', color: 'black' }} to="/shop/latest">
-              See All Kitchen Knives
+            <Link style={{ textDecoration: 'none', color: 'black' }} to="/shop/axes">
+              See All Historical Blades & Axes
             </Link>
           </h4>
         </div>
@@ -164,8 +164,8 @@ const IndexPost = ({ data }) => {
         </div>
         <div className="row product-main">
           {data.data.allContentfulProduct.edges
-          .slice(0)
           .filter(item => item.node.category === 'Architectural')
+          .slice(0, 6)
           .map(items => (
             <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id}>
               <div className="details_List">
@@ -236,8 +236,8 @@ const IndexPost = ({ data }) => {
         </div>
         <div className="row product-main">
           {data.data.allContentfulProduct.edges
-          .slice(0)
           .filter(item => item.node.category === 'Sculpture')
+          .slice(0, 6)
           .map(items => (
             <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id}>
               <div className="details_List">
@@ -308,8 +308,8 @@ const IndexPost = ({ data }) => {
         </div>
         <div className="row product-main">
           {data.data.allContentfulProduct.edges
-          .slice()
           .filter(item => item.node.category === 'Fireplace')
+          .slice(0, 6)
           .map(items => (
             <div className="Catalogue__item col-sm-12 col-md-6 col-lg-4" key={items.node.id}>
               <div className="details_List">

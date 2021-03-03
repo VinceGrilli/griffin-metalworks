@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import logo from '../images/btc-logo.png'
 
 const Footer = () => (
-  <footer className="site-footer">
+  <footer className="site-footer mt-5">
     <div className="footer_inner">
       <div className="container">
         <div className="footer-widget footer-content">
@@ -11,8 +11,8 @@ const Footer = () => (
             <div className="menu-main-container">
               <ul id="menu-main" className="menu">
                 <li><Link to="/about">About</Link></li>
-                <li><Link to="/blogs">News</Link></li>
-                <li><Link to="/store">Shop</Link></li>
+                <li><Link to="/news">News</Link></li>
+                <li><Link to="/shop">Shop</Link></li>
                 <li><Link to="/contact-us">Contact</Link></li>
                 <li><Link to="/copyright">Copyright</Link></li>
               </ul>
@@ -30,9 +30,9 @@ const Footer = () => (
             <a href="https://builttocode.dev">
               <img
                 style={{
-                                    maxWidth: `7rem`,
-                                    marginTop: `1.25rem`
-                                }}
+                  maxWidth: `7rem`,
+                  marginTop: `1.25rem`
+                }}
                 src={logo}
                 alt="Built to Code"
               />

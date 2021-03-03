@@ -8,7 +8,7 @@ import SEO from "../../components/seo"
 
 
 const IndexPost = ({ data }) => {
-  const [useNoOfPosts, setNoOfPosts] = useState(6)
+  const [useNoOfPosts, setNoOfPosts] = useState(9)
   
   const handleScroll = () => {
     const lastScrollY = window.pageYOffset + 1100;
@@ -41,7 +41,7 @@ const IndexPost = ({ data }) => {
                     </h2>
                     <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                     <div className="row">
-                      <div className="col-sm-4 align-self-center">
+                      <div className="col-sm-4 align-self-center pr-0">
                         <span className="price">
                           $
                           {items.node.price}
@@ -65,9 +65,17 @@ const IndexPost = ({ data }) => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div>              
           )})}
+          
         </div>
+        <div className="text-center">
+          <h4 className="with-underline">
+            <Link style={{ textDecoration: 'none', color: 'black' }} to="/shop">
+              Back to Shop Page
+            </Link>
+          </h4>
+        </div>  
       </>
     );
   }
