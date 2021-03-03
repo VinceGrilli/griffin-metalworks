@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
 import { Link , graphql } from "gatsby"
@@ -122,6 +121,7 @@ export const query = graphql`
     allContentfulHeaderBanner {
       edges {
         node {
+          id
           title
           subHeading
           image {
