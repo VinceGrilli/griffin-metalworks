@@ -229,7 +229,7 @@ const IndexPost = ({ data }) => {
 
         <div className="text-center mt-5">
           <h2 className="with-underline">
-            <Link style={{ textDecoration: 'none', color: 'black' }} to="/shop/sculpture">
+            <Link style={{ textDecoration: 'none', color: 'black' }} to="/shop/sculptures">
               Sculptures
             </Link>
           </h2>
@@ -291,7 +291,7 @@ const IndexPost = ({ data }) => {
         </div>
         <div className="text-center">
           <h4 className="with-underline">
-            <Link style={{ textDecoration: 'none', color: 'black' }} to="/shop/sculpture">
+            <Link style={{ textDecoration: 'none', color: 'black' }} to="/shop/sculptures">
               See All Sculptures
             </Link>
           </h4>
