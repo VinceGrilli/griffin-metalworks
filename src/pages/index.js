@@ -92,7 +92,7 @@ const IndexPage = data => (
 export default IndexPage
 
 export const query = graphql`
-  query AboutQuery {
+  query IndexQuery {
     allContentfulProduct(limit: 6,sort:{fields:createdAt,order: DESC}){
       edges{
         node{
