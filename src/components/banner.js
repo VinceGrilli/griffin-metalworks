@@ -3,7 +3,6 @@
 import React from "react";
 import Slider from "react-slick";
 import Img from "gatsby-image";
-import { Link } from "gatsby";
 
 const settings = {
   dots: true,
@@ -26,7 +25,6 @@ const Banner = ({ BannerData }) => (
               <div>
                 <span className="sub-title">{items.node.subHeading}</span>
                 <h1>{items.node.title}</h1>
-                <Link to="/shop">Shop Now</Link>
               </div>
             </div>
           </div>

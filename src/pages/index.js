@@ -124,7 +124,7 @@ export const query = graphql`
         node {
           id
           title
-          subHeading
+          # subHeading
           image {
             fluid(maxWidth: 1800) {
               base64
