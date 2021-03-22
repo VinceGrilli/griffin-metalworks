@@ -1,9 +1,9 @@
 {
-  "name": "OneShopper",
+  "name": "GriffinMetalworks",
   "private": true,
-  "description": "E-Commerce site with Gatsby and React",
+  "description": "Offical Home of Griffin Metalworks",
   "version": "0.1.0",
-  "author": "Rohit Gupta <rohitguptab33@gmail.com>",
+  "author": "Vince Grilli <Vince@BuiltToCode.dev>",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "dotenv": "^8.0.0",
@@ -54,9 +54,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Rohitguptab/OneShopper"
+    "url": "https://github.com/VinceGrilli/griffin-metalworks"
   },
   "bugs": {
-    "url": "https://github.com/Rohitguptab/OneShopper/issues"
+    "url": "https://github.com/VinceGrilli/griffin-metalworks/issues"
   }
 }

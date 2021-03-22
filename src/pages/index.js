@@ -26,7 +26,7 @@ const IndexPost = ({ data }) => (
               <p>{items.node.details.childMarkdownRemark.excerpt}</p>
               <div className="row">
                 <div className="col-sm-4 align-self-center pr-0">
-                  {items.node.price === null ? <h6 className='my-auto'>Contact us for an estimate</h6> : (
+                  {items.node.price === null ? <h5 className='my-auto pb-2'>Contact us for an estimate</h5> : (
                     <span className="price ">
                       $
                       {items.node.price}
@@ -72,7 +72,7 @@ const IndexPost = ({ data }) => (
 
 const IndexPage = data => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `oneshopper`, `react`, `Ecommerce`]} />
+    <SEO title="Home" keywords={[`Griffin`, `Metalworks`, `Knives`, `Axes`]} />
     <Banner BannerData={data.data.allContentfulHeaderBanner.edges} />
     <div className="container">
       <div className="text-center">

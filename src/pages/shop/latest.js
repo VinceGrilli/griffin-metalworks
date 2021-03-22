@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useState, useEffect} from "react"
 import { Link , graphql } from "gatsby"
@@ -40,7 +41,7 @@ const IndexPost = ({ data }) => {
                     <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                     <div className="row">
                       <div className="col-sm-4 align-self-center pr-0">
-                        {items.node.price === null ? <h6 className='my-auto'>Contact us for an estimate</h6> : (
+                        {items.node.price === null ? <h5 className='my-auto pb-2'>Contact us for an estimate</h5> : (
                           <span className="price">
                             $
                             {items.node.price}

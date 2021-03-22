@@ -6,7 +6,7 @@ import "../css/font-awesome.css"
 import "bootstrap/dist/css/bootstrap.css"
 import "../css/style.css"
 import SEO from "./seo"
-import logo from "../images/logo-bad-sm.jpg"
+import logo from "../images/temp-logo.png"
 
 
 
@@ -46,7 +46,6 @@ const Header = ({ siteTitle }) => (
         </div>
       </div>
     </div>
-
   </header>
 )
 

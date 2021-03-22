@@ -1,4 +1,5 @@
-var dotenv = require("dotenv");
+const dotenv = require("dotenv");
+
 dotenv.config();
 
 const { GATSBY_SPACE_ID, GATSBY_ACCESS_TOKEN, GATSBY_SNIPCART_APIKEY } = process.env;
@@ -30,7 +31,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/oneshopper-logo.png`,
+        icon: `src/images/temp-logo.png`,
       },
     },
     {
