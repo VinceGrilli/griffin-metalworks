@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;600;700&display=swap');
 
-html{font-family:'Josefin Sans',sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+html{font-family:'Inknut Antiqua', serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 article,
 aside,
@@ -82,7 +82,7 @@ html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}
 *{box-sizing:inherit}
 *:before{box-sizing:inherit}
 *:after{box-sizing:inherit}
-body{color:hsla(0,0%,0%,0.8);font-family:georgia,serif;font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern","liga","clig","calt";-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt"}
+body{color:hsla(0,0%,0%,0.8);font-family:Inknut Antiqua, serif;font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern","liga","clig","calt";-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt"}
 img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem}
 h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-weight:bold;text-rendering:optimizeLegibility;font-size:2.25rem;line-height:1.1}
 h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.62671rem;line-height:1.1}
@@ -148,7 +148,7 @@ pre tt:after{content:""}
 }
 
 
-*{font-family:'Josefin Sans',sans-serif;}
+*{font-family:'Inknut Antiqua', serif;}
 .product-main .details_List .gatsby-image-wrapper{height:200px;}
 .img{outline:none;}
 .product-main .details_List{margin:0 0 30px 0;-webkit-box-shadow:0 5px 10px -3px rgba(0,0,0,0.25);box-shadow:0 5px 10px -3px rgba(0,0,0,0.25);-webkit-transition:-webkit-box-shadow 0.2s;-o-transition:box-shadow 0.2s;transition:box-shadow 0.2s,-webkit-box-shadow 0.2s;border:1px solid #cccccc73;}
@@ -180,7 +180,6 @@ footer.site-footer *{color:#fff;}
 .no-image{height:200px;background:#b8142a75;display:flex;justify-content:center;flex-direction:column;text-align:center;color:#fff;text-shadow:1px 1px 5px #000;}
 .snipcart-add-item i.fas{margin-right:8px;}
 .product-main .details_List .details_inner p{font-size:16px;}
-.product-main .details_List .details_inner p{font-size:17px;}
 .snip-layout .snip-header{background:#333!important;}
 .snip-layout .snip-header__total{background:#fff!important;}
 .snip-layout .snip-header__total *{color:#b8142a!important;text-transform:capitalize!important;font-weight:600!important;letter-spacing:1px!important;}
@@ -189,7 +188,7 @@ footer.site-footer *{color:#fff;}
 .snip-layout .snip-actions a.snip-btn{background:#333!important;color:#fff!important;}
 .snip-layout .snip-actions a.snip-btn:hover{background:#b8142a!important;}
 .product-details  .gatsby-image-wrapper{margin-bottom:30px;}
-span.price{font-weight:bold;font-size:30px;}
+span.price{font-weight:bold;font-size:28px;}
 .Product-Screenshot ul.react-tabs__tab-list{list-style:none;margin:0;top:0;right:0;height:100%;bottom:0;padding:0;display:flex;justify-content:center;flex-direction:row;text-align:center;}
 .Product-Screenshot ul.react-tabs__tab-list li{width:190px;cursor:pointer;margin:0 5px;}
 .Product-Screenshot li{list-style:none;}

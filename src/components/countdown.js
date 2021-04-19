@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 const Countdown = ({ data }) => (
-  <div className="countdown-section">
+  <div className="countdown-section mb-n5">
     <Img sizes={data.featureImage.fluid} />
     <div className="container">
       <div className="countdown-inner">
